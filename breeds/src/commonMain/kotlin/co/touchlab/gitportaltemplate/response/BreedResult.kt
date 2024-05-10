@@ -1,4 +1,4 @@
-package co.touchlab.kmmbridgekickstart.response
+package co.touchlab.gitportaltemplate.response
 
 import kotlinx.serialization.Serializable
 

@@ -1,8 +1,8 @@
-package co.touchlab.kmmbridgekickstart.ktor
+package co.touchlab.gitportaltemplate.ktor
 
-import co.touchlab.kmmbridgekickstart.BreedAnalytics
-import co.touchlab.kmmbridgekickstart.HttpClientAnalytics
-import co.touchlab.kmmbridgekickstart.response.BreedResult
+import co.touchlab.gitportaltemplate.BreedAnalytics
+import co.touchlab.gitportaltemplate.HttpClientAnalytics
+import co.touchlab.gitportaltemplate.response.BreedResult
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.engine.HttpClientEngine

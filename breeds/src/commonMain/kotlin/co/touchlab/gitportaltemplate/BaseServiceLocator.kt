@@ -1,16 +1,16 @@
-package co.touchlab.kmmbridgekickstart
+package co.touchlab.gitportaltemplate
 
 import app.cash.sqldelight.db.SqlDriver
-import co.touchlab.kmmbridgekickstart.ktor.DogApi
-import co.touchlab.kmmbridgekickstart.ktor.DogApiImpl
-import co.touchlab.kmmbridgekickstart.repository.BreedRepository
+import co.touchlab.gitportaltemplate.ktor.DogApi
+import co.touchlab.gitportaltemplate.ktor.DogApiImpl
+import co.touchlab.gitportaltemplate.repository.BreedRepository
 import com.russhwolf.settings.Settings
 import io.ktor.client.engine.HttpClientEngine
 import kotlinx.coroutines.Dispatchers
 import kotlinx.datetime.Clock
 
-internal const val SETTINGS_KEY = "KMMBridgeKickStartSettings"
-internal const val DB_NAME = "KMMBridgeKickStartDb"
+internal const val SETTINGS_KEY = "GitPortalTemplateSettings"
+internal const val DB_NAME = "GitPortalTemplateDb"
 
 internal abstract class BaseServiceLocator(private val analyticsHandle: AnalyticsHandle) : ServiceLocator {
 

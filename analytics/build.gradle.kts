@@ -33,5 +33,5 @@ android {
         @Suppress("UnstableApiUsage")
         minSdk = kmpLibs.versions.minSdk.get().toInt()
     }
-    namespace = "co.touchlab.kmmbridgekickstart.analytics"
+    namespace = "co.touchlab.gitportaltemplate.analytics"
 }

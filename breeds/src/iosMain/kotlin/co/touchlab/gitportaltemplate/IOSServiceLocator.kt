@@ -1,7 +1,7 @@
-package co.touchlab.kmmbridgekickstart
+package co.touchlab.gitportaltemplate
 
-import co.touchlab.kmmbridgekickstart.db.KMMBridgeKickStartDb
-import co.touchlab.kmmbridgekickstart.repository.BreedRepository
+import co.touchlab.gitportaltemplate.db.GitPortalTemplateDb
+import co.touchlab.gitportaltemplate.repository.BreedRepository
 import com.russhwolf.settings.NSUserDefaultsSettings
 import com.russhwolf.settings.Settings
 import app.cash.sqldelight.db.SqlDriver
@@ -21,7 +21,7 @@ internal class IOSServiceLocator(
 ) : BaseServiceLocator(analyticsHandle) {
 
     override val sqlDriver: SqlDriver by lazy {
-        NativeSqliteDriver(KMMBridgeKickStartDb.Schema, DB_NAME)
+        NativeSqliteDriver(GitPortalTemplateDb.Schema, DB_NAME)
     }
 
     override val settings: Settings by lazy { NSUserDefaultsSettings(userDefaults) }

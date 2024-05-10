@@ -1,4 +1,4 @@
-package co.touchlab.kmmbridgekickstart
+package co.touchlab.gitportaltemplate
 
 fun startSDK(analytics: Analytics): SDKHandle {
     val analyticsHandle = initAnalytics(analytics)

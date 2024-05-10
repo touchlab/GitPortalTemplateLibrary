@@ -44,8 +44,8 @@ touchlab-kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
 touchlab-stately-common = { module = "co.touchlab:stately-common", version.ref = "stately" }
 touchlab-stately-concurrency = { module = "co.touchlab:stately-concurrency", version.ref = "stately" }
 
-sharedlib-analytics = { module = "co.touchlab.kmmbridgekickstartskie:analytics-android-debug", version.ref = "sharedlib" }
-sharedlib-breeds = { module = "co.touchlab.kmmbridgekickstartskie:breeds-android-debug", version.ref = "sharedlib" }
+sharedlib-analytics = { module = "co.touchlab.gitportaltemplate:analytics-android-debug", version.ref = "sharedlib" }
+sharedlib-breeds = { module = "co.touchlab.gitportaltemplate:breeds-android-debug", version.ref = "sharedlib" }
 
 [bundles]
 ktor-common = ["ktor-client-core", "ktor-client-logging", "ktor-client-serialization", "ktor-client-contentNegotiation"]

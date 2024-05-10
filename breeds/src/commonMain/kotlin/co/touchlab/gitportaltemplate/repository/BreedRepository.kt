@@ -1,9 +1,9 @@
-package co.touchlab.kmmbridgekickstart.repository
+package co.touchlab.gitportaltemplate.repository
 
-import co.touchlab.kmmbridgekickstart.BreedAnalytics
-import co.touchlab.kmmbridgekickstart.DatabaseHelper
-import co.touchlab.kmmbridgekickstart.db.Breed
-import co.touchlab.kmmbridgekickstart.ktor.DogApi
+import co.touchlab.gitportaltemplate.BreedAnalytics
+import co.touchlab.gitportaltemplate.DatabaseHelper
+import co.touchlab.gitportaltemplate.db.Breed
+import co.touchlab.gitportaltemplate.ktor.DogApi
 import com.russhwolf.settings.Settings
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.*

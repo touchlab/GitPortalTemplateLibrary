@@ -55,11 +55,11 @@ android {
         @Suppress("UnstableApiUsage")
         minSdk = kmpLibs.versions.minSdk.get().toInt()
     }
-    namespace = "co.touchlab.kmmbridgekickstart.breeds"
+    namespace = "co.touchlab.gitportaltemplate.breeds"
 }
 
 sqldelight {
-    databases.create("KMMBridgeKickStartDb") {
-        packageName.set("co.touchlab.kmmbridgekickstart.db")
+    databases.create("GitPortalTemplateDb") {
+        packageName.set("co.touchlab.gitportaltemplate.db")
     }
 }

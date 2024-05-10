@@ -1,4 +1,4 @@
-package co.touchlab.kmmbridgekickstart
+package co.touchlab.gitportaltemplate
 
 import co.touchlab.stately.concurrency.AtomicReference
 

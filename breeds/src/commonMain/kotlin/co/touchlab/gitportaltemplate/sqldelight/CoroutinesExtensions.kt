@@ -1,4 +1,4 @@
-package co.touchlab.kmmbridgekickstart.sqldelight
+package co.touchlab.gitportaltemplate.sqldelight
 
 import app.cash.sqldelight.Transacter
 import app.cash.sqldelight.TransactionWithoutReturn

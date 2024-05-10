@@ -1,6 +1,6 @@
-package co.touchlab.kmmbridgekickstart
+package co.touchlab.gitportaltemplate
 
-import co.touchlab.kmmbridgekickstart.repository.BreedRepository
+import co.touchlab.gitportaltemplate.repository.BreedRepository
 
 data class SDKHandle(
     val breedRepository: BreedRepository,
