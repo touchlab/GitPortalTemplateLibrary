@@ -1,9 +1,9 @@
 plugins {
     kotlin("multiplatform") version kmpLibs.versions.kotlin.get() apply false
     kotlin("plugin.serialization") version kmpLibs.versions.kotlin.get() apply false
-    id("com.android.library") version kmpLibs.versions.android.gradle.plugin.get() apply false
-    id("app.cash.sqldelight") version kmpLibs.versions.sqlDelight.get() apply false
-    id("co.touchlab.skie") version kmpLibs.versions.skie.get() apply false
+    alias(kmpLibs.plugins.android.library) apply false
+    alias(kmpLibs.plugins.sqldelight) apply false
+    alias(kmpLibs.plugins.skie) apply false
 }
 
 allprojects {

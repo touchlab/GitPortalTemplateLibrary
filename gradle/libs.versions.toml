@@ -47,6 +47,12 @@ touchlab-stately-concurrency = { module = "co.touchlab:stately-concurrency", ver
 sharedlib-analytics = { module = "co.touchlab.gitportaltemplate:analytics-android-debug", version.ref = "sharedlib" }
 sharedlib-breeds = { module = "co.touchlab.gitportaltemplate:breeds-android-debug", version.ref = "sharedlib" }
 
+[plugins]
+sqldelight = { id = "app.cash.sqldelight", version.ref = "sqlDelight" }
+android-library = { id = "com.android.library", version.ref = "android-gradle-plugin" }
+skie = { id = "co.touchlab.skie", version.ref = "skie" }
+
+
 [bundles]
 ktor-common = ["ktor-client-core", "ktor-client-logging", "ktor-client-serialization", "ktor-client-contentNegotiation"]
 

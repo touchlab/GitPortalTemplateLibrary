@@ -1,7 +1,7 @@
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     kotlin("multiplatform")
-    id("co.touchlab.skie")
+    alias(kmpLibs.plugins.skie)
 }
 
 kotlin {

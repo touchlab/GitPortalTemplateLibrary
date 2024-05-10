@@ -1,8 +1,8 @@
 plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization")
-    id("app.cash.sqldelight")
-    id("com.android.library")
+    alias(kmpLibs.plugins.android.library)
+    alias(kmpLibs.plugins.sqldelight)
 }
 
 kotlin {

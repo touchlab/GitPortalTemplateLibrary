@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-    id("com.android.library")
+    alias(kmpLibs.plugins.android.library)
 }
 
 kotlin {
