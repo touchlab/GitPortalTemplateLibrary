@@ -19,32 +19,32 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(project(":analytics"))
-                implementation(libs.coroutines.core)
-                implementation(libs.bundles.ktor.common)
-                implementation(libs.multiplatformSettings)
-                implementation(libs.kotlinx.dateTime)
-                implementation(libs.touchlab.kermit)
-                implementation(libs.sqlDelight.coroutinesExt)
+                implementation(kmpLibs.coroutines.core)
+                implementation(kmpLibs.bundles.ktor.common)
+                implementation(kmpLibs.multiplatformSettings)
+                implementation(kmpLibs.kotlinx.dateTime)
+                implementation(kmpLibs.touchlab.kermit)
+                implementation(kmpLibs.sqlDelight.coroutinesExt)
             }
         }
         val androidMain by getting {
             dependencies {
-                implementation(libs.sqlDelight.android)
-                implementation(libs.ktor.client.okHttp)
+                implementation(kmpLibs.sqlDelight.android)
+                implementation(kmpLibs.ktor.client.okHttp)
             }
         }
         val iosMain by getting {
             dependencies {
-                implementation(libs.touchlab.stately.common)
-                implementation(libs.sqlDelight.native)
-                implementation(libs.ktor.client.ios)
+                implementation(kmpLibs.touchlab.stately.common)
+                implementation(kmpLibs.sqlDelight.native)
+                implementation(kmpLibs.ktor.client.ios)
             }
         }
     }
 }
 
 android {
-    compileSdk = libs.versions.compileSdk.get().toInt()
+    compileSdk = kmpLibs.versions.compileSdk.get().toInt()
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -53,7 +53,7 @@ android {
 
     defaultConfig {
         @Suppress("UnstableApiUsage")
-        minSdk = libs.versions.minSdk.get().toInt()
+        minSdk = kmpLibs.versions.minSdk.get().toInt()
     }
     namespace = "co.touchlab.kmmbridgekickstart.breeds"
 }

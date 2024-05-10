@@ -5,5 +5,7 @@ pluginManagement {
         mavenCentral()
     }
 }
-
+dependencyResolutionManagement {
+    defaultLibrariesExtensionName = "kmpLibs"
+}
 include("breeds", "analytics", "allshared")

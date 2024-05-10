@@ -15,14 +15,14 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(libs.touchlab.stately.concurrency)
+                implementation(kmpLibs.touchlab.stately.concurrency)
             }
         }
     }
 }
 
 android {
-    compileSdk = libs.versions.compileSdk.get().toInt()
+    compileSdk = kmpLibs.versions.compileSdk.get().toInt()
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -31,7 +31,7 @@ android {
 
     defaultConfig {
         @Suppress("UnstableApiUsage")
-        minSdk = libs.versions.minSdk.get().toInt()
+        minSdk = kmpLibs.versions.minSdk.get().toInt()
     }
     namespace = "co.touchlab.kmmbridgekickstart.analytics"
 }
