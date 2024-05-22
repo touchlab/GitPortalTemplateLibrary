@@ -6,17 +6,15 @@ plugins {
 }
 
 kotlin {
-    @Suppress("OPT_IN_USAGE")
-    targetHierarchy.default()
     androidTarget {
         publishAllLibraryVariants()
     }
-    ios()
-    // Note: iosSimulatorArm64 target requires that all dependencies have M1 support
+    iosArm64()
+    iosX64()
     iosSimulatorArm64()
 
     sourceSets {
-        val commonMain by getting {
+        commonMain {
             dependencies {
                 implementation(project(":analytics"))
                 implementation(kmpLibs.coroutines.core)
@@ -27,13 +25,13 @@ kotlin {
                 implementation(kmpLibs.sqlDelight.coroutinesExt)
             }
         }
-        val androidMain by getting {
+        androidMain {
             dependencies {
                 implementation(kmpLibs.sqlDelight.android)
                 implementation(kmpLibs.ktor.client.okHttp)
             }
         }
-        val iosMain by getting {
+        iosMain {
             dependencies {
                 implementation(kmpLibs.touchlab.stately.common)
                 implementation(kmpLibs.sqlDelight.native)
