@@ -5,9 +5,6 @@ plugins {
 }
 
 kotlin {
-    @Suppress("OPT_IN_USAGE")
-    targetHierarchy.default()
-
     listOf(
         iosX64(),
         iosArm64(),
@@ -20,7 +17,7 @@ kotlin {
     }
 
     sourceSets {
-        val commonMain by getting {
+        commonMain {
             dependencies {
                 implementation(project(":breeds"))
                 api(project(":analytics"))
