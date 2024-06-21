@@ -16,3 +16,4 @@ build
 !/.idea/inspectionProfiles/*
 
 .swiftpm
+.kotlin
